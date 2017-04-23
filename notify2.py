@@ -5,7 +5,7 @@ define('LINE_API',"https://notify-api.line.me/api/notify");
 $token = "oHsGoAFIBFIoUHn2Gio8UuTrnv6EtuUYaWM7STkebTm"; //ใส่Token ที่copy เอาไว้
 
 
-$str = "เกิดเหตุฉุกเฉิน โปรดเช็คกล้องที่ http://192.168.0.104:1414"; //ข้อความที่ต้องการส่ง สูงสุด 1000 ตัวอักษร
+$str = "ปิดแก๊สปิดไฟปิดน้ำเรียบร้อยแล้ว"; //ข้อความที่ต้องการส่ง สูงสุด 1000 ตัวอักษร
  
 $res = notify_message($str,$token);
 
