@@ -2,7 +2,7 @@
 define('LINE_API',"https://notify-api.line.me/api/notify");
  //oHsGoAFIBFIoUHn2Gio8UuTrnv6EtuUYaWM7STkebTm mytoken
  //wcyEAm1ppXmTosJbJnzChSz3won2MBNNkFxdv9RHkK7 secure group token
-$token = "oHsGoAFIBFIoUHn2Gio8UuTrnv6EtuUYaWM7STkebTm"; //ใส่Token ที่copy เอาไว้
+$token = "wcyEAm1ppXmTosJbJnzChSz3won2MBNNkFxdv9RHkK7"; //ใส่Token ที่copy เอาไว้
 
 
 $str = "ปิดแก๊สปิดไฟปิดน้ำเรียบร้อยแล้ว"; //ข้อความที่ต้องการส่ง สูงสุด 1000 ตัวอักษร
