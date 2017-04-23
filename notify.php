@@ -3,7 +3,7 @@ define('LINE_API',"https://notify-api.line.me/api/notify");
  //oHsGoAFIBFIoUHn2Gio8UuTrnv6EtuUYaWM7STkebTm mytoken
  //wcyEAm1ppXmTosJbJnzChSz3won2MBNNkFxdv9RHkK7 secure group token
 $token = "wcyEAm1ppXmTosJbJnzChSz3won2MBNNkFxdv9RHkK7"; //ใส่Token ที่copy เอาไว้
-$cctv = "https://baokung.ddns.eagleeyes.tw";
+$cctv = "http://baokung.ddns.eagleeyes.tw:1414";
 
 
 $str = "เกิดเหตุฉุกเฉิน โปรดเช็คกล้องที่ "."$cctv"; //ข้อความที่ต้องการส่ง สูงสุด 1000 ตัวอักษร
