@@ -7,13 +7,14 @@ $cctv = "http://baokung.ddns.eagleeyes.tw:1414";
 
 
 $str = "This test message send from raspberry PI by motion.py"; //ข้อความที่ต้องการส่ง สูงสุด 1000 ตัวอักษร
+$pic = new CurlFile('/path/to/temp.jpg', 'image/jpg', 'temp.jpg');
  
-$res = notify_message($str,$token);
+$res = notify_message($str,$token); //ไม่รันฟังชั่นเลย แต่รันเป้นการแทนตัวแปรเพื่อรับค่ารีเทิร์น
 
 print_r($res);
 
-function notify_message($message,$token){
- $queryData = array('message' => $message);
+function notify_message($message,$imageFile,$token){ //รูปแบบลำดับตัวแปรขณะเรียกฟังก์ชั่น
+ $queryData = array('message' => $message , 'imageFile' => $imageFile); //'ชื่ออาเร' => $ค่าอาเร
  $queryData = http_build_query($queryData,'','&');
  $headerOptions = array( 
          'http'=>array(
