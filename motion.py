@@ -6,7 +6,7 @@ $token = "wcyEAm1ppXmTosJbJnzChSz3won2MBNNkFxdv9RHkK7"; //ใส่Token ที�
 $cctv = "http://baokung.ddns.eagleeyes.tw:1414";
 
 
-$str = "This test message send from raspberry PI"; //ข้อความที่ต้องการส่ง สูงสุด 1000 ตัวอักษร
+$str = "This test message send from raspberry PI by motion.py"; //ข้อความที่ต้องการส่ง สูงสุด 1000 ตัวอักษร
  
 $res = notify_message($str,$token);
 
