@@ -59,6 +59,6 @@ function send_notify_message($line_api, $access_token, $message_data){
       $return_array = json_decode($result, true);
    }
    curl_close($ch);
-return $result; //รีเทินไปที่ตัวแปรนั้นๆ
+return $return_array; //รีเทิร์นตัวแปรตามชื่อไปที่ตัว(แปร)เรียกฟังฟังชั่น
 }
 ?>
