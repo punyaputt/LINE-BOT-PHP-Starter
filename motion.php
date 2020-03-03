@@ -14,7 +14,7 @@ $res = notify_message($img,$str,$pic,$token); //ไม่รันฟังช�
 
 print_r($res);
 
-function notify_message($imageFullsize$message,$imageFile,$token){ //รูปแบบลำดับตัวแปรขณะเรียกฟังก์ชั่น
+function notify_message($imageFullsize,$message,$imageFile,$token){ //รูปแบบลำดับตัวแปรขณะเรียกฟังก์ชั่น
  $queryData = array('message' => $message , 'imageFile' => $imageFile , 'imageFullsize' => $imageFullsize); //'ชื่ออาเร' => $ค่าอาเร
  $queryData = http_build_query($queryData,'','&');
  $headerOptions = array( 
