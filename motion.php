@@ -5,6 +5,7 @@ define('LINE_API',"https://notify-api.line.me/api/notify");
 $token = "Xr0dlthqsczXQjQVlcHzRvFCy6qTPiwRNhCEkfx5YyL"; //ใส่Token ที่copy เอาไว้
 $access_token = "Xr0dlthqsczXQjQVlcHzRvFCy6qTPiwRNhCEkfx5YyL";
 $cctv = "http://baokung.ddns.eagleeyes.tw:1414";
+$line_api = 'https://notify-api.line.me/api/notify';
 
 
 $str = "detected"; //ข้อความที่ต้องการส่ง สูงสุด 1000 ตัวอักษร
