@@ -1,5 +1,5 @@
 <?php
-$photo=$_GET["photo"];
+$photo = $_GET["photo"];
 define('LINE_API',"https://notify-api.line.me/api/notify");
  //oHsGoAFIBFIoUHn2Gio8UuTrnv6EtuUYaWM7STkebTm mytoken/
  //wcyEAm1ppXmTosJbJnzChSz3won2MBNNkFxdv9RHkK7 secure group token
