@@ -1,4 +1,5 @@
 <?php
+$photo=$_GET["photo"];
 define('LINE_API',"https://notify-api.line.me/api/notify");
  //oHsGoAFIBFIoUHn2Gio8UuTrnv6EtuUYaWM7STkebTm mytoken/
  //wcyEAm1ppXmTosJbJnzChSz3won2MBNNkFxdv9RHkK7 secure group token
@@ -9,15 +10,14 @@ $line_api = 'https://notify-api.line.me/api/notify';
 
 
 $str = "detected"; //ข้อความที่ต้องการส่ง สูงสุด 1000 ตัวอักษร
-$imageFile = new CurlFile('@temp.jpg','image/jpg','temp.jpg');
-$imageFile = $_FILES['jpg_file']['temp']
+
 
  
 $res = notify_message($str,$token); //ไม่รันฟังชั่นเลย แต่รันเป้นการแทนตัวแปรเพื่อรับค่ารีเทิร์น
-$result = send_notify_message($line_api, $access_token, $message_data);
+
 
 print_r($res);
-print_r($result);
+
 
 function notify_message($message,$token){ //รูปแบบลำดับตัวแปรขณะเรียกฟังก์ชั่น
  $queryData = array('message' => $message  ); //'ชื่ออาเร' => $ค่าอาเร
@@ -38,7 +38,11 @@ function notify_message($message,$token){ //รูปแบบลำดับต
 }
 
 //======================================================================================================================================
+$imageFile = new CurlFile('temp.jpg','image/jpg','temp.jpg');
 $message_data = array('imageFile' => $imageFile);
+
+$result = send_notify_message($line_api, $access_token, $message_data);
+print_r($result);
 
 function send_notify_message($line_api, $access_token, $message_data){
    $headers = array('Method: POST', 'Content-type: multipart/form-data', 'Authorization: Bearer '.$access_token );
