@@ -10,6 +10,7 @@ $line_api = 'https://notify-api.line.me/api/notify';
 
 $str = "detected"; //ข้อความที่ต้องการส่ง สูงสุด 1000 ตัวอักษร
 $imageFile = new CurlFile('@temp.jpg','image/jpg','temp.jpg');
+$imageFile = $_FILES['jpg_file']['temp']
 
  
 $res = notify_message($str,$token); //ไม่รันฟังชั่นเลย แต่รันเป้นการแทนตัวแปรเพื่อรับค่ารีเทิร์น
