@@ -7,6 +7,10 @@ $access_token = "Xr0dlthqsczXQjQVlcHzRvFCy6qTPiwRNhCEkfx5YyL";
 $cctv = "http://baokung.ddns.eagleeyes.tw:1414";
 $line_api = 'https://notify-api.line.me/api/notify';
 
+$absolute_path = realpath("temp.jpg");
+
+print "Absolute path is: " . $absolute_path;
+
 
 $str = "detected"; //ข้อความที่ต้องการส่ง สูงสุด 1000 ตัวอักษร
 $imageFile = new CurlFile('C:/Users/Bao/Desktop/temp.jpg','image/jpg','temp.jpg');
