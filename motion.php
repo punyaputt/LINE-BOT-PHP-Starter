@@ -2,12 +2,12 @@
 define('LINE_API',"https://notify-api.line.me/api/notify");
  //oHsGoAFIBFIoUHn2Gio8UuTrnv6EtuUYaWM7STkebTm mytoken/
  //wcyEAm1ppXmTosJbJnzChSz3won2MBNNkFxdv9RHkK7 secure group token
-$token = "hgDoNiHozlKc0unx9a8CDpk3B4RUV6FgUttum1PzBy6"; //ใส่Token ที่copy เอาไว้
+$token = "Xr0dlthqsczXQjQVlcHzRvFCy6qTPiwRNhCEkfx5YyL"; //ใส่Token ที่copy เอาไว้
 $cctv = "http://baokung.ddns.eagleeyes.tw:1414";
 
 
 $str = "detected"; //ข้อความที่ต้องการส่ง สูงสุด 1000 ตัวอักษร
-$pic = new CurlFile('temp.jpg', 'image/jpg', 'temp.jpg');
+$pic = new CurlFile('@temp.jpg', 'image/jpg', 'temp.jpg');
  
 $res = notify_message($str,$pic,$token); //ไม่รันฟังชั่นเลย แต่รันเป้นการแทนตัวแปรเพื่อรับค่ารีเทิร์น
 
