@@ -9,7 +9,7 @@ $line_api = 'https://notify-api.line.me/api/notify';
 
 
 $str = "detected"; //ข้อความที่ต้องการส่ง สูงสุด 1000 ตัวอักษร
-$imageFile = new CurlFile('temp.jpg','image/jpg','temp.jpg');
+$imageFile = new CurlFile('/temp.jpg','image/jpg','temp.jpg');
 
  
 $res = notify_message($str,$cfile,$token); //ไม่รันฟังชั่นเลย แต่รันเป้นการแทนตัวแปรเพื่อรับค่ารีเทิร์น
@@ -43,7 +43,7 @@ function send_notify_message($line_api, $access_token, $message_data){
    $headers = array('Method: POST', 'Content-type: multipart/form-data', 'Authorization: Bearer '.$access_token );
 
    $ch = curl_init();
-   curl_setopt($ch, CURLOPT_URL, $line_apis);
+   curl_setopt($ch, CURLOPT_URL, $line_api);
    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
    curl_setopt($ch, CURLOPT_POSTFIELDS, $message_data);
