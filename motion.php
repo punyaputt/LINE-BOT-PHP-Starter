@@ -8,14 +8,14 @@ $cctv = "http://baokung.ddns.eagleeyes.tw:1414";
 
 $str = "detected"; //ข้อความที่ต้องการส่ง สูงสุด 1000 ตัวอักษร
 $pic = curl_file_create('@temp.jpeg', 'image/jpeg', 'temp.jpeg');
-$img = 'https://dummyimage.com/1024x1024/f598f5/fff.jpg';
+
  
 $res = notify_message($img,$str,$pic,$token); //ไม่รันฟังชั่นเลย แต่รันเป้นการแทนตัวแปรเพื่อรับค่ารีเทิร์น
 
 print_r($res);
 
-function notify_message($imageFullsize,$message,$imageFile,$token){ //รูปแบบลำดับตัวแปรขณะเรียกฟังก์ชั่น
- $queryData = array('message' => $message , 'imageFile' => $imageFile , 'imageFullsize' => $imageFullsize); //'ชื่ออาเร' => $ค่าอาเร
+function notify_message($message,$imageFile,$token){ //รูปแบบลำดับตัวแปรขณะเรียกฟังก์ชั่น
+ $queryData = array('message' => $message , 'imageFile' => $imageFile ); //'ชื่ออาเร' => $ค่าอาเร
  $queryData = http_build_query($queryData,'','&');
  $headerOptions = array( 
          'http'=>array(
