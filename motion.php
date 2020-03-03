@@ -13,6 +13,7 @@ $imageFile = 'temp.jpg';
 
  
 $res = notify_message($str,$cfile,$token); //ไม่รันฟังชั่นเลย แต่รันเป้นการแทนตัวแปรเพื่อรับค่ารีเทิร์น
+  $result = send_notify_message($line_api, $access_token, $message_data);
 
 print_r($res);
 
