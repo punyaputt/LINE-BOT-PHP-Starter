@@ -31,15 +31,4 @@ function notify_message($message,$imageFile,$token){ //รูปแบบลำ�
  return $res;
 }
 
-  if(curl_error($ch))
-   {
-      $return_array = array( 'status' => '000: send fail', 'message' => curl_error($ch) );
-   }
-   else
-   {
-      $return_array = json_decode($result, true);
-   }
-   curl_close($ch);
-return $return_array;
-}
 ?>
