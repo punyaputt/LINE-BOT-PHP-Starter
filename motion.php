@@ -8,7 +8,7 @@ $cctv = "http://baokung.ddns.eagleeyes.tw:1414";
 
 $str = "detected"; //ข้อความที่ต้องการส่ง สูงสุด 1000 ตัวอักษร
 curl_setopt($curl_handle, CURLOPT_POST, 1);
-$cfile = new CurlFile('temp.jpg','image/jpg','temp.jpg');
+$cfile = new CurlFile('temp.jpg');
 curl_setopt($curl_handle, CURLOPT_POSTFIELDS, $cfile);
 
  
