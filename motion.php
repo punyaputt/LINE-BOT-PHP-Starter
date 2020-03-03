@@ -16,6 +16,7 @@ $res = notify_message($str,$cfile,$token); //ไม่รันฟังชั�
 $result = send_notify_message($line_api, $access_token, $message_data);
 
 print_r($res);
+print_r($result);
 
 function notify_message($message,$imageFile,$token){ //รูปแบบลำดับตัวแปรขณะเรียกฟังก์ชั่น
  $queryData = array('message' => $message , 'imageFile' => $imageFile ); //'ชื่ออาเร' => $ค่าอาเร
