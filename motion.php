@@ -37,6 +37,7 @@ function notify_message($message,$imageFile,$token){ //รูปแบบลำ�
  return $res;
 }
 
+//======================================================================================================================================
 $message_data = array('imageFile' => $imageFile);
 
 function send_notify_message($line_api, $access_token, $message_data){
