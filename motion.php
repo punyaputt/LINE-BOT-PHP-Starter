@@ -10,8 +10,6 @@ $line_api = 'https://notify-api.line.me/api/notify';
 
 $str = "detected"; //ข้อความที่ต้องการส่ง สูงสุด 1000 ตัวอักษร
 $imageFile = 'C:\Users\Bao\Desktop\temp.jpg';
-if (!is_file($uploadPath)) die("The file '$imageFile' does not exist");
-if (!is_readable($uploadPath)) die("The file '$imageFile' is not readable");
 
  
 $res = notify_message($str,$cfile,$token); //ไม่รันฟังชั่นเลย แต่รันเป้นการแทนตัวแปรเพื่อรับค่ารีเทิร์น
