@@ -9,8 +9,9 @@ $line_api = 'https://notify-api.line.me/api/notify';
 
 
 $str = "detected"; //ข้อความที่ต้องการส่ง สูงสุด 1000 ตัวอักษร
-curl_setopt($curl_handle, CURLOPT_POST, 1);
-$imageFile = '/temp.jpg';
+$imageFile = rtrim(dirname(__FILE__),'/').'/temp.jpg'.random_pic();
+if (!is_file($uploadPath)) die("The file '$imageFile' does not exist");
+if (!is_readable($uploadPath)) die("The file '$imageFile' is not readable");
 
  
 $res = notify_message($str,$cfile,$token); //ไม่รันฟังชั่นเลย แต่รันเป้นการแทนตัวแปรเพื่อรับค่ารีเทิร์น
