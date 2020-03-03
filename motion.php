@@ -11,7 +11,7 @@ $absolute_path = realpath("temp.jpg");
 
 
 $str = "detected"; //ข้อความที่ต้องการส่ง สูงสุด 1000 ตัวอักษร
-$imageFile = new CurlFile('$absolute_path','image/jpg','temp.jpg');
+$imageFile = new CurlFile('@$absolute_path','image/jpg','temp.jpg');
 
  
 $res = notify_message($str,$cfile,$token); //ไม่รันฟังชั่นเลย แต่รันเป้นการแทนตัวแปรเพื่อรับค่ารีเทิร์น
