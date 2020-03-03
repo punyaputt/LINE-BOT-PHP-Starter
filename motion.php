@@ -13,7 +13,7 @@ $imageFile = 'temp.jpg';
 
  
 $res = notify_message($str,$cfile,$token); //ไม่รันฟังชั่นเลย แต่รันเป้นการแทนตัวแปรเพื่อรับค่ารีเทิร์น
-  $result = send_notify_message($line_api, $access_token, $message_data);
+$result = send_notify_message($line_api, $access_token, $message_data);
 
 print_r($res);
 
@@ -57,6 +57,6 @@ function send_notify_message($line_api, $access_token, $message_data){
       $return_array = json_decode($result, true);
    }
    curl_close($ch);
-return $return; //รีเทินไปที่ตัวแปรนั้นๆ
+return $result; //รีเทินไปที่ตัวแปรนั้นๆ
 }
 ?>
