@@ -43,7 +43,7 @@ function send_notify_message($line_api, $access_token, $message_data){
    $headers = array('Method: POST', 'Content-type: multipart/form-data', 'Authorization: Bearer '.$access_token );
 
    $ch = curl_init();
-   curl_setopt($ch, CURLOPT_URL, $line_api);
+   curl_setopt($ch, CURLOPT_URL, $line_apis);
    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
    curl_setopt($ch, CURLOPT_POSTFIELDS, $message_data);
