@@ -7,7 +7,7 @@ $cctv = "http://baokung.ddns.eagleeyes.tw:1414";
 
 
 $str = "detected"; //ข้อความที่ต้องการส่ง สูงสุด 1000 ตัวอักษร
-$pic = curl_file_create('https://dummyimage.com/1024x1024/f598f5/fff.jpg', 'image/jpeg', 'temp.jpeg');
+$pic = curl_file_create('@temp.jpeg', 'image/jpeg', 'temp.jpeg');
 $img = 'https://dummyimage.com/1024x1024/f598f5/fff.jpg';
  
 $res = notify_message($img,$str,$pic,$token); //ไม่รันฟังชั่นเลย แต่รันเป้นการแทนตัวแปรเพื่อรับค่ารีเทิร์น
